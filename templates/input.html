@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 300px;
+}
+
+form {
+    width: 300px;
+    margin: 5px;
+    text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+</style>
+    </head>
+<body>
+
+<form action="/upload-audio" method="post" enctype="multipart/form-data">
+    <input style=" padding-bottom: 100px; padding-top: 100px;" type="file" name="audio" id="fileToUpload">
+     <input type="submit" value="Speech to Text" name="submit">
+</form>
+
+</body>
+</html>
